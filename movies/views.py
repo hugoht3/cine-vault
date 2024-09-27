@@ -6,4 +6,5 @@ from .models import Movie
 
 
 class HomepageMovieList(generic.ListView):
-    model = Movie
+    queryset = Movie.objects.all().filter(status=1)
+    template_name = "movie_list.html"

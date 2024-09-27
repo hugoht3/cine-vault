@@ -1,0 +1,58 @@
+[
+    {
+        "model": "blog.post",
+        "pk": 1,
+        "fields": {
+            "title": "The Evolution of Film: From Silent Era to Streaming",
+            "slug": "evolution-of-film-from-silent-era-to-streaming",
+            "author": 1,
+            "content": "<p>The history of cinema spans over a century, with groundbreaking advancements along the way. From the early days of silent films to the rise of digital streaming, each era has redefined how we experience movies.</p><p>In this article, we explore the milestones that have shaped modern-day cinema and how they continue to influence filmmakers worldwide.</p>",
+            "created_on": "2024-09-27T12:00:00Z",
+            "status": 1,
+            "excerpt": "A journey through the major eras of cinema, exploring innovations from silent films to digital streaming.",
+            "updated_on": "2024-09-27T12:00:00Z"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 2,
+        "fields": {
+            "title": "Cinematic Landscapes: How Locations Set the Scene",
+            "slug": "cinematic-landscapes-how-locations-set-the-scene",
+            "author": 2,
+            "content": "<p>From sweeping deserts to bustling cities, a film’s setting can enhance the story's emotional tone. Locations often become characters in their own right, adding depth to the visual narrative.</p><p>This post delves into iconic movie locations and how they bring scripts to life, creating an immersive experience for viewers.</p>",
+            "created_on": "2024-09-27T14:00:00Z",
+            "status": 1,
+            "excerpt": "An exploration of famous movie locations and how they impact the visual storytelling of films.",
+            "updated_on": "2024-09-27T14:00:00Z"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 3,
+        "fields": {
+            "title": "The Rise of Indie Filmmaking: Creativity on a Budget",
+            "slug": "rise-of-indie-filmmaking-creativity-on-a-budget",
+            "author": 3,
+            "content": "<p>Independent filmmakers have carved out a unique space in the industry, using limited resources to produce innovative films. With a focus on creativity, they have proven that big budgets aren’t required for compelling storytelling.</p><p>Discover how indie films continue to disrupt traditional Hollywood structures, offering fresh perspectives and diverse voices.</p>",
+            "created_on": "2024-09-27T16:00:00Z",
+            "status": 1,
+            "excerpt": "A look into how independent filmmakers create impactful cinema with limited resources and maximum creativity.",
+            "updated_on": "2024-09-27T16:00:00Z"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 4,
+        "fields": {
+            "title": "Visual Effects in Cinema: From Practical to Digital",
+            "slug": "visual-effects-in-cinema-from-practical-to-digital",
+            "author": 4,
+            "content": "<p>Visual effects (VFX) have revolutionized the film industry, allowing filmmakers to bring fantastical worlds and creatures to life. The transition from practical effects to digital VFX has expanded creative possibilities like never before.</p><p>In this post, we explore the evolution of VFX and the pivotal role it plays in modern filmmaking.</p>",
+            "created_on": "2024-09-27T18:00:00Z",
+            "status": 1,
+            "excerpt": "Exploring the transformation of visual effects in cinema, from practical models to cutting-edge digital creations.",
+            "updated_on": "2024-09-27T18:00:00Z"
+        }
+    }
+]
