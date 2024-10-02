@@ -7,4 +7,5 @@ from .models import Movie
 
 class HomepageMovieList(generic.ListView):
     queryset = Movie.objects.all().filter(status=1)
-    template_name = "movie_list.html"
+    template_name = "movies/index.html"
+    paginate_by = 3

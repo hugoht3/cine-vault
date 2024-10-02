@@ -8,7 +8,7 @@ from django_summernote.admin import SummernoteModelAdmin
 
 class MoviePostAdmin(SummernoteModelAdmin):
 
-    list_display = ('title', 'slug', 'status',)
+    list_display = ('title', 'slug', 'status', 'author')
     search_fields = ['title', 'content',]
     list_filter = ('status', 'created_on',)
     prepopulated_fields = {'slug': ('title',)}
