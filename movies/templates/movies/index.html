@@ -19,7 +19,8 @@
                                 </div>
                             </div>
                             <a href="#" class="post-link">
-                                <h2 class="card-title">{{ movie.title }}</h2>
+                                <a href="{% url 'movie_detail' movie.slug %}" class="movie-link">
+                                <h2 class="card-title">{{ movie.title }}</h2></a>
                                 <p class="card-text">{{ movie.excerpt }}</p>
                             </a>
 
@@ -43,8 +44,7 @@
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
             <li>
-                <a href="?page={{ page_obj.previous_page_number }}"
-                  class="page-link">&laquo; PREV</a>
+                <a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV</a>
             </li>
             {% endif %}
             {% if page_obj.has_next %}
