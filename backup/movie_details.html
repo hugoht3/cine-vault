@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- movie_detail.html content starts here -->
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Movie Detail Column -->
+        <div class="col-12 mt-3 left">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="image-container">
+                        <div class="image-flash">
+                            <!-- Movie author -->
+                            <p class="author">Author: {{ movie.author }}</p>
+                        </div>
+                    </div>
+                    <!-- Movie title -->
+                    <h1 class="card-title">{{ movie.title }}</h1>
+                    <hr />
+                    <!-- Movie creation date -->
+                    <p class="card-text text-muted h6">{{ movie.created_on }}</p>
+
+                    <!-- Movie content -->
+                    <div class="card-text mt-4">
+                        {{ movie.content | safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination or related content could go here -->
+</div>
+<!-- movie_detail.html content ends here -->
+{% endblock %}

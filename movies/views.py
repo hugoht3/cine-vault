@@ -24,8 +24,8 @@ def movie_detail(request, slug):
     movie = get_object_or_404(queryset, slug=slug)
 
     return render(
-    request,
-    "movies/movie_detail.html",
-    {"movie": movie}, 
+        request,
+        "movies/movie_details.html",
+        {"movie": movie}, 
     
     )
