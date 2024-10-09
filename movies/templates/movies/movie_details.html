@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 <!-- movie_detail.html content starts here -->
@@ -14,6 +15,7 @@
                             <!-- Movie author -->
                             <p class="author">Author: {{ movie.author }}</p>
                         </div>
+                        <img src="{% static 'images/filler.jpeg' %}" class="img-fluid w-50" alt="placeholder">
                     </div>
                     <!-- Movie title -->
                     <h1 class="card-title">{{ movie.title }}</h1>

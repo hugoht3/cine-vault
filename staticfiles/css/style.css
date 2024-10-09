@@ -1,0 +1,236 @@
+/** Google fonts imports **/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pathway+Gothic+One&display=swap');
+
+body {
+    background-color: #0f0f0f;
+    font-family: 'Pathway Gothic One';
+}
+
+h1,
+h2,
+h3,
+h5 {
+    color: azure;
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.3vh;
+}
+
+.brand {
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.6vh;
+    color: #830303;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+/** Styles navbar items **/
+li.nav-item {
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.1vh;
+}
+
+#card-title {
+    color: #c80303;
+}
+
+/** Styles film page movie links **/
+a.post-link {
+    color: #c80303;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title:hover {
+    color: #830303;
+}
+
+.card-title {
+    color: #c80303;
+    text-decoration: none;
+}
+
+p.movie-summary {
+    color: #5e0101;
+    text-decoration: none;
+    font-family: 'Pathway Gothic One';
+}
+
+/** Styles movie summary card **/
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.125);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.detail-card {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+/** Styles movie detail ratings and release date title **/
+.movie-title {
+    color: azure;
+}
+
+/** Styles movie comments **/
+.card {
+    color: #0f0f0f;
+}
+
+.card h3 {
+    color: #0f0f0f;
+}
+
+.approval {
+    color: #830303;
+}
+
+
+p {
+    font-family: 'Pathway Gothic One';
+    letter-spacing: 0.1vh;
+}
+
+
+/** Styles delete comment modal **/
+.modal-content {
+    color: #830303;
+    font-family: 'Pathway Gothic One';
+    letter-spacing: 0.1vh;
+    font-size: large;
+}
+
+.modal-content h5 {
+    color: #830303;
+}
+
+#page-link {
+    font-family: 'Pathway Gothic One';
+    color: #c80303;
+    border: 1px solid #c80303;
+    font-weight: 600;
+    border-radius: 3px;
+    letter-spacing: 0.6vh;
+}
+
+/** Styles movie carousel **/
+.carousel-caption.d-none.d-md-block {
+    max-height: 11vh;
+
+}
+
+.carousel-caption {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: medium;
+    text-decoration: none;
+}
+
+.carousel-title {
+    color: azure;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.carousel-title:hover {
+    color: #0f0f0f;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row.p-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: white;
+}
+
+/** Styles movie recommendation form **/
+p.recommend {
+    color: azure;
+}
+
+.form-label {
+    color: azure;
+}
+
+textarea#id_movie_title {
+    max-height: calc(1.5em + .75rem + 2px);
+}
+
+/** Styles newsletter  **/
+
+p.subscribe {
+    color: azure;
+}
+
+/** Styling for informative messages shown to user   **/
+div#msg {
+    font-size: large;
+}
+
+/** Styling for edit, delete, modal buttons  **/
+.btn-edit,
+.btn-delete,
+.btn-close,
+.btn {
+    color: azure;
+    background-color: #830303;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    font-size: 90%;
+}
+
+/* Media query: small devices (388 and up)*/
+@media screen and (min-width: 320px) {
+
+    /** styles movie carousel **/
+    .row.p-2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        background-color: white;
+    }
+
+    /** styles recommend movie form **/
+    textarea.form-control {
+        max-height: calc(1.4em + .45rem + 2px);
+    }
+}
+
+/** Media query: Tablets and medium deviced (768px and up) **/
+@media screen and (min-width: 560px) {
+    .row.p-2 {
+        width: 60%;
+    }
+
+    textarea.form-control {
+        max-height: calc(4em + 1.5rem + 2px);
+    }
+
+}
+
+/* Media query: large devices (1024px and up) */
+@media screen and (min-width: 1024px) {
+    .row.p-2 {
+        width: 30%;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+    }
+}
