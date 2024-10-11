@@ -29,6 +29,49 @@
                     </div>
                 </div>
             </div>
+            <!-- Displaying count of comments -->
+            <div class="container px-4 px-lg-5">
+                <div class="row">
+                    <div class="col-12">
+                        <strong class="text-secondary">
+                            <i class="far fa-comments"></i> {{ comment_count }} Comments
+                        </strong>
+                    </div>
+                    <div class="col-12">
+                        <hr />
+                    </div>
+                </div>
+
+                <!-- Displaying Comments with matching width to movie summary -->
+                <div class="row">
+                    <div class="col-md-12 mx-auto">
+                        <h3 class="text-primary">Comments:</h3>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <!-- Iterate through each comment -->
+                                {% for comment in comments %}
+                                <div
+                                    class="p-2 comment-box {% if not comment.approved and comment.author == user %} faded{% elif not comment.approved %} d-none{% endif %}">
+                                    <p class="font-weight-bold text-dark">
+                                        {{ comment.author }}
+                                        <small class="text-muted">{{ comment.created_on }}</small> wrote:
+                                    </p>
+                                    <div id="comment{{ comment.id }}" class="text-secondary">
+                                        {{ comment.body | linebreaks }}
+                                    </div>
+                                    {% if not comment.approved and comment.author == user %}
+                                    <p class="text-warning">
+                                        This comment is awaiting approval
+                                    </p>
+                                    {% endif %}
+                                </div>
+                                <hr />
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
