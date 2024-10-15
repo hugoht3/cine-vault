@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -51,6 +52,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'django_summernote',
+    'cloudinary',
     'movies',
 ]
 SITE_ID = 1
@@ -60,7 +62,11 @@ LOGOUT_REDIRECT_URL = '/'
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
-
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.getenv('CLOUD_NAME'),
+    'API_KEY': os.getenv('API_KEY'),
+    'API_SECRET': os.getenv('API_SECRET'),
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

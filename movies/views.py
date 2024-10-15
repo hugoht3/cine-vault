@@ -16,7 +16,7 @@ class HomepageMovieList(generic.ListView):
     '''
     queryset = Movie.objects.all().filter(status=1)
     template_name = "movies/index.html"
-    paginate_by = 3
+    paginate_by = 6
 
 
 
