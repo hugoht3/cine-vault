@@ -25,17 +25,26 @@
             <div class="mb-3">
               <label for="id_username" class="form-label">{% trans "Username" %}</label>
               {{ form.username }}
+              {% if form.username.errors %}
+                <div class="text-danger">{{ form.username.errors }}</div>
+              {% endif %}
             </div>
             <div class="mb-3">
               <label for="id_password" class="form-label">{% trans "Password" %}</label>
               {{ form.password }}
+              {% if form.password.errors %}
+                <div class="text-danger">{{ form.password.errors }}</div>
+              {% endif %}
             </div>
             {% if redirect_field_value %}
-            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+              <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
             {% endif %}
             <div class="d-flex justify-content-center">
               <button class="btn btn-dark btn-lg" type="submit">{% trans "Sign In" %} &raquo;</button>
             </div>
+            {% if form.non_field_errors %}
+              <div class="text-danger text-center mt-3">{{ form.non_field_errors }}</div>
+            {% endif %}
           </form>
 
         </div>
